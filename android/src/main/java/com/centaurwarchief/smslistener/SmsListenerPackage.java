@@ -22,7 +22,6 @@ public class SmsListenerPackage implements ReactPackage {
         );
     }
 
-    // @Override deprecated in RN 0.47
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
