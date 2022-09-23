@@ -1,11 +1,11 @@
-## `react-native-android-sms-listener` [![react-native-android-sms-listener](https://badge.fury.io/js/react-native-android-sms-listener.svg)](https://badge.fury.io/js/react-native-android-sms-listener)
+## `react-native-android-sms-listener`
 
 A utility that allows you to listen for incoming SMS messages (working in background).
 
 ### Example
 
 ```JS
-import SmsListener from 'react-native-android-sms-listener'
+import SmsListener from '@ernestbies/react-native-android-sms-listener'
 
 SmsListener.addListener(message => {
   console.info(message)
@@ -38,14 +38,14 @@ async function requestReadSmsPermission() {
     await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.READ_SMS,
     );
-    
+
     await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.RECEIVE_SMS,
     );
   } catch (err) {}
 }
+```
 
 ### Installation
 
-``SH
 $ npm install --save @ernestbies/react-native-android-sms-listener
